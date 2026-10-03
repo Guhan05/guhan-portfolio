@@ -1,0 +1,228 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Guhan M. — Software Engineering | Cloud & Cybersecurity</title><style>
+:root{--bg:#080a0f;--panel:#0f131b;--line:#202735;--text:#f3f6fb;--muted:#98a2b3;--accent:#7dd3fc;--accent2:#a78bfa}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 10%,#172033 0,#080a0f 35%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.logo{font-weight:800;letter-spacing:.08em}.navlinks{display:flex;gap:26px;color:var(--muted);font-size:14px}.navlinks a:hover{color:#fff}.hero{min-height:650px;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}.eyebrow{font:700 12px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--accent);letter-spacing:.16em;text-transform:uppercase}.hero h1{font-size:clamp(48px,7vw,86px);line-height:.95;margin:18px 0}.hero h1 span{display:block;background:linear-gradient(90deg,#fff,#9ca3af);-webkit-background-clip:text;color:transparent}.hero p{font-size:19px;color:var(--muted);max-width:650px}.buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{padding:12px 18px;border:1px solid var(--line);border-radius:10px;background:#111722}.btn.primary{background:#fff;color:#080a0f;border-color:#fff}.terminal{background:#090c12;border:1px solid var(--line);border-radius:16px;box-shadow:0 30px 80px #0008;overflow:hidden}.termbar{padding:12px 16px;border-bottom:1px solid var(--line);color:#6b7280;font:12px monospace}.term{padding:24px;font:13px/2 ui-monospace,SFMono-Regular,Menlo,monospace}.cyan{color:var(--accent)}.violet{color:var(--accent2)}section{padding:95px 0;border-top:1px solid var(--line)}.sectionhead{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:35px}.sectionhead h2{font-size:36px;margin:0}.sectionhead p{color:var(--muted);max-width:560px}.about{display:grid;grid-template-columns:1fr 1fr;gap:50px}.cardgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#111722,#0c1017);border:1px solid var(--line);border-radius:16px;padding:24px;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#3b4659}.card h3{margin:0 0 10px;font-size:20px}.muted{color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.tag{font:11px ui-monospace,monospace;color:#cbd5e1;border:1px solid #293243;padding:4px 7px;border-radius:6px}.metric{font-size:30px;font-weight:800}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:20px}.skillgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.skill{padding:18px;border:1px solid var(--line);border-radius:12px;background:#0c1017}.skill b{display:block;margin-bottom:8px}.timeline{border-left:1px solid #334155;padding-left:28px}.role{margin-bottom:34px}.role h3{margin:0}.role .date{color:var(--accent);font:12px monospace}.contact{text-align:center}.contact h2{font-size:48px;margin:0 0 12px}.footer{padding:30px 0;color:#697386;font-size:13px;display:flex;justify-content:space-between}.links{display:flex;gap:18px}.links a{text-decoration:underline;text-decoration-color:#334155}.reveal{animation:up .7s ease both}@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}@media(max-width:800px){.navlinks{display:none}.hero,.about{grid-template-columns:1fr}.hero{padding:60px 0;min-height:auto}.cardgrid{grid-template-columns:1fr}.skillgrid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.sectionhead{display:block}.contact h2{font-size:36px}.footer{display:block}.links{margin-top:12px}}
+
+.reviews-layout{display:grid;grid-template-columns:1.35fr .65fr;gap:22px}.review-list{display:grid;gap:14px}.review{background:#0c1017;border:1px solid var(--line);border-radius:14px;padding:20px}.review-top{display:flex;justify-content:space-between;gap:15px}.stars{color:var(--accent);letter-spacing:2px}.review h4{margin:0}.review-form{position:sticky;top:20px;height:max-content}.review-form label{display:block;font-size:13px;margin:13px 0;color:#cbd5e1}.review-form input,.review-form select,.review-form textarea,.modal-box input{width:100%;margin-top:6px;background:#080b11;border:1px solid #293243;border-radius:8px;padding:10px;color:#fff;font:inherit}.review-form textarea{min-height:120px;resize:vertical}.review-form button{margin:8px 0}.modal{position:fixed;inset:0;background:#000b;display:none;align-items:center;justify-content:center;z-index:100;padding:20px}.modal.open{display:flex}.modal-box{width:min(430px,100%);background:#10151e;border:1px solid #334155;border-radius:16px;padding:26px;position:relative;box-shadow:0 30px 100px #000}.modal-close{position:absolute;right:15px;top:10px;background:none;border:0;color:#94a3b8;font-size:25px;cursor:pointer}.error{color:#fca5a5;font-size:13px}.owner-link{text-align:center;padding:25px 0}.admin-item{display:flex;gap:12px;justify-content:space-between;align-items:flex-start;margin-bottom:12px}.admin-item .actions{display:flex;gap:7px;flex-shrink:0}.btn.danger{color:#fecaca;border-color:#7f1d1d;background:#2a0f13}.btn.small{padding:7px 10px;font-size:12px}@media(max-width:800px){.reviews-layout{grid-template-columns:1fr}.review-form{position:static}.admin-item{display:block}.admin-item .actions{margin-top:10px}}
+
+.review-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px}.review-form,.review-admin{background:linear-gradient(145deg,#111722,#0c1017);border:1px solid var(--line);border-radius:16px;padding:24px}.review-form label{display:block;font-size:12px;color:#94a3b8;margin:12px 0 6px}.review-form input,.review-form textarea,.review-form select{width:100%;padding:12px;border:1px solid #293243;border-radius:9px;background:#090d14;color:#f3f6fb;font:inherit}.review-form textarea{min-height:120px;resize:vertical}.stars{display:flex;gap:5px;flex-direction:row-reverse;justify-content:flex-end}.stars input{display:none}.stars label{font-size:28px;color:#334155;cursor:pointer;margin:0}.stars label:hover,.stars label:hover~label,.stars input:checked~label{color:#facc15}.review-list{display:grid;gap:14px;margin-top:22px}.review-item{border:1px solid var(--line);border-radius:14px;padding:20px;background:#0c1017}.review-meta{display:flex;justify-content:space-between;gap:12px;align-items:start}.review-stars{color:#facc15;letter-spacing:2px}.review-date{color:#64748b;font:11px monospace}.admin-row{border:1px solid #293243;border-radius:12px;padding:14px;margin-top:12px}.admin-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.smallbtn{padding:8px 11px;border-radius:8px;border:1px solid #334155;background:#111722;color:#e2e8f0;cursor:pointer}.smallbtn.danger{border-color:#7f1d1d;color:#fecaca}.status{font-size:11px;font-family:monospace;color:#94a3b8}.hidden{display:none!important}.review-note{font-size:12px;color:#64748b;margin-top:10px}.admin-tools{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}.modal{position:fixed;inset:0;background:#000b;display:grid;place-items:center;padding:20px;z-index:50}.modal-card{width:min(430px,100%);background:#0f131b;border:1px solid #334155;border-radius:16px;padding:24px;box-shadow:0 30px 100px #000}.modal-card input{width:100%;margin:10px 0;padding:12px;background:#090d14;border:1px solid #293243;border-radius:9px;color:#fff}.review-empty{color:#64748b;padding:24px 0}@media(max-width:800px){.review-grid{grid-template-columns:1fr}}
+</style></head><body>
+<div class='wrap'><nav class='nav'><a class='logo' href='#top'>GUHAN M.</a><div class='navlinks'><a href='#about'>About</a><a href='#projects'>Projects</a><a href='#experience'>Experience</a><a href='#research'>Research</a><a href='#reviews'>Reviews</a><a href='#contact'>Contact</a></div></nav>
+<header id='top' class='hero'><div class='reveal'><div class='eyebrow'>Software Engineering · Cloud · Cybersecurity</div><h1>Building secure<br><span>systems that matter.</span></h1><p>Integrated M.Tech Software Engineering student focused on cloud security, intelligent intrusion detection, networking and production-oriented software.</p><div class='buttons'><a class='btn primary' href='#projects'>View projects →</a><a class='btn' href='#contact'>Get in touch</a><a class='btn' href='https://github.com/Guhan05' target='_blank'>GitHub ↗</a></div></div><div class='terminal reveal'><div class='termbar'>guhan@portfolio:~$ ./profile</div><div class='term'><span class='cyan'>identity</span> = "Software Engineer"
+<br><span class='cyan'>focus</span> = [cloud, security, networks]
+<br><span class='cyan'>degree</span> = "Integrated M.Tech · VIT"
+<br><span class='cyan'>status</span> = "5th year · graduating 2027"
+<br><br><span class='violet'>✓</span> AWS Solutions Architect – Associate
+<br><span class='violet'>✓</span> 98.28% IDS detection accuracy
+<br><span class='violet'>✓</span> Post-quantum cloud storage research</div></div></header>
+<section id='about'><div class='sectionhead'><h2>About</h2><p>A technical profile built around security engineering, cloud infrastructure and applied machine learning.</p></div><div class='about'><div><p class='muted'>I am pursuing an Integrated M.Tech in Software Engineering at VIT, with a strong focus on cybersecurity, cloud security and network security.</p><p class='muted'>My work spans secure cloud storage, adaptive intrusion detection, AWS security monitoring and API/backend development. I enjoy taking security concepts beyond theory and turning them into working systems.</p></div><div class='card'><div class='metric'>8.44</div><div class='muted'>Current CGPA</div><br><div class='metric'>2027</div><div class='muted'>Expected graduation</div><br><div class='metric'>AWS SAA</div><div class='muted'>Certified · valid through 2029</div></div></div></section>
+<section id='projects'><div class='sectionhead'><h2>Featured projects</h2><p>Selected systems demonstrating cloud, security, AI/ML and software engineering capability.</p></div><div class='cardgrid'><article class='card'><div class='eyebrow'>01 · Security / AI</div><h3>Adaptive Drift-Aware IDS</h3><p class='muted'>Hybrid ANN–Fuzzy intrusion detection architecture with packet capture, drift-aware fusion, adaptive memory and autonomous response.</p><div class='metrics'><div><div class='metric'>98.28%</div><small class='muted'>accuracy</small></div><div><div class='metric'>CICIDS</div><small class='muted'>dataset</small></div></div><div class='tags'><span class='tag'>Python</span><span class='tag'>Scapy</span><span class='tag'>FastAPI</span><span class='tag'>React</span><span class='tag'>ANN</span><span class='tag'>Fuzzy Logic</span></div></article><article class='card'><div class='eyebrow'>02 · Cloud / Crypto</div><h3>Secure Cloud Storage</h3><p class='muted'>Hybrid cryptographic storage system using AES-256-GCM with RSA-4096 and Kyber-1024 key protection on AWS S3.</p><div class='metrics'><div><div class='metric'>PQC</div><small class='muted'>Kyber-1024</small></div><div><div class='metric'>AWS S3</div><small class='muted'>storage</small></div></div><div class='tags'><span class='tag'>Spring Boot</span><span class='tag'>React</span><span class='tag'>AWS</span><span class='tag'>BouncyCastle</span></div></article><article class='card'><div class='eyebrow'>03 · Cloud Security</div><h3>AWS Honeypot Monitoring</h3><p class='muted'>Terraform-deployed honeypot with real-time attack telemetry, GuardDuty findings, CloudWatch alarms, Lambda processing and SNS alerts.</p><div class='metrics'><div><div class='metric'>8+</div><small class='muted'>AWS services</small></div><div><div class='metric'>100+</div><small class='muted'>events tested</small></div></div><div class='tags'><span class='tag'>Terraform</span><span class='tag'>EC2</span><span class='tag'>GuardDuty</span><span class='tag'>Lambda</span><span class='tag'>SNS</span></div></article><article class='card'><div class='eyebrow'>04 · AI / Web</div><h3>ReceiptAI</h3><p class='muted'>AI-powered receipt intelligence prototype combining OCR processing with a FastAPI backend and React interface.</p><div class='tags'><span class='tag'>Python</span><span class='tag'>FastAPI</span><span class='tag'>React</span><span class='tag'>OCR</span></div></article></div></section>
+<section id='skills'><div class='sectionhead'><h2>Technical stack</h2><p>Tools I use across application development, cloud infrastructure and security engineering.</p></div><div class='skillgrid'><div class='skill'><b>Languages</b><span class='muted'>Java · Python · C · C++</span></div><div class='skill'><b>Cloud</b><span class='muted'>AWS · EC2 · S3 · IAM · Lambda · CloudWatch · GuardDuty · SNS · API Gateway · DynamoDB</span></div><div class='skill'><b>Security & Networking</b><span class='muted'>Wireshark · Nmap · Burp Suite · Snort · Hashcat · TCPView · Packet Tracer</span></div><div class='skill'><b>Development</b><span class='muted'>Spring Boot · React · FastAPI · REST APIs · Docker · Git · Linux · Terraform</span></div><div class='skill'><b>AI / ML</b><span class='muted'>ANN · Fuzzy Logic · Random Forest · CNN · VGG19 · YOLOv8</span></div><div class='skill'><b>Cryptography</b><span class='muted'>AES-256-GCM · RSA-4096 · Kyber-1024 · JWT · BouncyCastle</span></div></div></section>
+<section id='experience'><div class='sectionhead'><h2>Experience</h2><p>Hands-on exposure across AWS infrastructure, APIs, production engineering and software development.</p></div><div class='timeline'><div class='role'><div class='date'>MAY–JUN 2026</div><h3>Academic Intern · Hoags Technologies</h3><p class='muted'>Worked with APIs and endpoint security, AWS and DigitalOcean environments, production Python code, testing and support workflows. Built a cloud project using AWS and Terraform.</p></div><div class='role'><div class='date'>MAY–JUN 2025</div><h3>AWS Intern · CloudLogic Technologies</h3><p class='muted'>Configured AWS EC2 and S3 resources and worked with IAM-based access policies and cloud infrastructure fundamentals.</p></div></div></section>
+<section id='research'><div class='sectionhead'><h2>Research</h2><p>Applied security research with an emphasis on practical system architecture and measurable performance.</p></div><div class='cardgrid'><div class='card'><div class='eyebrow'>Conference paper</div><h3>Hybrid Post-Quantum Cloud Storage</h3><p class='muted'>Research on AES-256-GCM file encryption combined with RSA-4096 and Kyber-1024 key wrapping for biotech research data. Presented at an international conference and under Springer publication.</p></div><div class='card'><div class='eyebrow'>Research direction</div><h3>Adaptive & Explainable IDS</h3><p class='muted'>Exploring drift-aware intrusion detection, real-time explainability, knowledge distillation and causal reasoning for security analytics.</p></div><div class='card'><div class='eyebrow'>Interests</div><h3>Cloud Security · Networks</h3><p class='muted'>Interested in cloud security engineering, network protocols, intrusion detection, secure APIs and performance-oriented systems.</p></div></div></section>
+
+<section id='reviews'><div class='sectionhead'><h2>Reviews</h2><p>Feedback from people I have worked, studied or built with. New submissions are moderated before appearing publicly.</p></div>
+<div class='review-grid'>
+<form id='reviewForm' class='review-form'><div class='eyebrow'>Leave feedback</div><label for='reviewName'>Name</label><input id='reviewName' maxlength='100' required placeholder='Your name'><label for='reviewRole'>Role / relationship</label><input id='reviewRole' maxlength='120' placeholder='e.g. Teammate, Mentor, Classmate'><label>Rating</label><div class='stars'><input id='star5' type='radio' name='rating' value='5' checked><label for='star5'>★</label><input id='star4' type='radio' name='rating' value='4'><label for='star4'>★</label><input id='star3' type='radio' name='rating' value='3'><label for='star3'>★</label><input id='star2' type='radio' name='rating' value='2'><label for='star2'>★</label><input id='star1' type='radio' name='rating' value='1'><label for='star1'>★</label></div><label for='reviewText'>Review</label><textarea id='reviewText' maxlength='2000' required placeholder='Share your experience working with Guhan...'></textarea><button class='btn primary' type='submit'>Submit review →</button><div id='reviewStatus' class='review-note'></div></form>
+<div><div id='reviewList' class='review-list'><div class='review-empty'>Loading reviews...</div></div></div>
+</div>
+<div class='review-admin' style='margin-top:22px'><div class='admin-tools'><div><div class='eyebrow'>Owner controls</div><div class='muted'>Sign in to moderate, edit or delete reviews.</div></div><button id='adminLoginBtn' class='btn'>Owner sign in</button></div><div id='adminPanel' class='hidden' style='margin-top:18px'><div id='adminStatus' class='status'></div><div id='adminReviews'></div></div></div>
+</section>
+<div id='loginModal' class='modal hidden'><div class='modal-card'><button id='closeModal' class='modal-close' aria-label='Close'>×</button><div class='eyebrow'>Owner authentication</div><h3>Guhan M. — Admin</h3><p class='muted'>Sign in with the owner account configured in Supabase Auth.</p><label for='adminEmail' class='review-note'>Email</label><input id='adminEmail' type='email' autocomplete='username' placeholder='Owner email'><label for='adminPassword' class='review-note'>Password</label><input id='adminPassword' type='password' autocomplete='current-password' placeholder='Owner password'><div class='buttons'><button id='adminSignIn' class='btn primary'>Sign in</button><button id='cancelLogin' class='btn'>Cancel</button></div><div id='loginStatus' class='review-note'></div></div></div>
+<section id='contact' class='contact'><div class='eyebrow'>Contact</div><h2>Let’s build something secure.</h2><p class='muted'>Open to software engineering, cloud, security and networking opportunities.</p><div class='buttons' style='justify-content:center'><a class='btn primary' href='mailto:YOUR_EMAIL@example.com'>Email me</a><a class='btn' href='https://www.linkedin.com/' target='_blank'>LinkedIn ↗</a><a class='btn' href='https://github.com/Guhan05' target='_blank'>GitHub ↗</a></div></section>
+<footer class='footer'><span>© 2026 Guhan M. Built with React/Tailwind-ready design.</span><div class='links'><a href='#top'>Back to top ↑</a></div></footer></div>
+<script src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2'></script>
+<script>
+const SUPABASE_URL = 'https://dvpoaorkatnbulzbvsko.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_FezB5q2z9wl__qK4y837DA_WKsrcKkU';
+const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+const esc = (value) => String(value ?? '').replace(/[&<>'"]/g, (c) => ({
+  '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+}[c]));
+const stars = (n) => '★'.repeat(n) + '☆'.repeat(5 - n);
+
+async function loadReviews() {
+  const { data, error } = await sb
+    .from('reviews')
+    .select('id,name,role,rating,review,created_at')
+    .eq('approved', true)
+    .order('created_at', { ascending: false });
+
+  const el = document.getElementById('reviewList');
+  if (error) {
+    el.innerHTML = '<div class="review-empty">Reviews are temporarily unavailable.</div>';
+    return;
+  }
+  if (!data?.length) {
+    el.innerHTML = '<div class="review-empty">No public reviews yet. Be the first to leave feedback.</div>';
+    return;
+  }
+
+  el.innerHTML = data.map((r) => `
+    <article class="review-item">
+      <div class="review-meta">
+        <div><strong>${esc(r.name)}</strong>${r.role ? `<div class="muted">${esc(r.role)}</div>` : ''}</div>
+        <div class="review-stars">${stars(r.rating)}</div>
+      </div>
+      <p class="muted">${esc(r.review)}</p>
+      <div class="review-date">${new Date(r.created_at).toLocaleDateString()}</div>
+    </article>
+  `).join('');
+}
+
+document.getElementById('reviewForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const status = document.getElementById('reviewStatus');
+  status.textContent = 'Submitting...';
+  const rating = Number(document.querySelector('input[name=rating]:checked').value);
+  const { error } = await sb.from('reviews').insert({
+    name: document.getElementById('reviewName').value.trim(),
+    role: document.getElementById('reviewRole').value.trim() || null,
+    rating,
+    review: document.getElementById('reviewText').value.trim()
+  });
+  if (error) {
+    status.textContent = 'Could not submit the review. Please try again.';
+    return;
+  }
+  e.target.reset();
+  document.getElementById('star5').checked = true;
+  status.textContent = 'Thanks. Your review was submitted for moderation.';
+});
+
+const modal = document.getElementById('loginModal');
+const loginStatus = document.getElementById('loginStatus');
+
+function openLogin() {
+  loginStatus.textContent = '';
+  modal.classList.remove('hidden');
+  document.getElementById('adminEmail').focus();
+}
+function closeLogin() {
+  modal.classList.add('hidden');
+  loginStatus.textContent = '';
+  document.getElementById('adminPassword').value = '';
+}
+
+document.getElementById('adminLoginBtn').onclick = openLogin;
+document.getElementById('closeModal').onclick = closeLogin;
+document.getElementById('cancelLogin').onclick = closeLogin;
+
+document.getElementById('adminSignIn').onclick = async () => {
+  const email = document.getElementById('adminEmail').value.trim();
+  const password = document.getElementById('adminPassword').value;
+  if (!email || !password) {
+    loginStatus.textContent = 'Enter both email and password.';
+    return;
+  }
+  loginStatus.textContent = 'Signing in...';
+  const { error } = await sb.auth.signInWithPassword({ email, password });
+  if (error) {
+    loginStatus.textContent = error.message;
+    return;
+  }
+  closeLogin();
+  await admin();
+};
+
+document.getElementById('adminPassword').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') document.getElementById('adminSignIn').click();
+});
+
+async function admin() {
+  const { data: { session } } = await sb.auth.getSession();
+  const panel = document.getElementById('adminPanel');
+  const btn = document.getElementById('adminLoginBtn');
+
+  if (!session) {
+    panel.classList.add('hidden');
+    btn.textContent = 'Owner sign in';
+    btn.onclick = openLogin;
+    return;
+  }
+
+  const role = session.user.app_metadata?.role;
+  if (role !== 'admin') {
+    panel.classList.remove('hidden');
+    document.getElementById('adminStatus').textContent = 'Signed in, but this account is not an owner admin.';
+    btn.textContent = 'Sign out';
+    btn.onclick = async () => { await sb.auth.signOut(); await admin(); };
+    return;
+  }
+
+  panel.classList.remove('hidden');
+  document.getElementById('adminStatus').textContent = `Authenticated as ${session.user.email}`;
+  btn.textContent = 'Sign out';
+  btn.onclick = async () => { await sb.auth.signOut(); await admin(); };
+
+  const { data, error } = await sb.from('reviews').select('*').order('created_at', { ascending: false });
+  const box = document.getElementById('adminReviews');
+  if (error) {
+    box.innerHTML = '<div class="review-note">Unable to load owner reviews.</div>';
+    return;
+  }
+  if (!data?.length) {
+    box.innerHTML = '<div class="review-note">No reviews to manage.</div>';
+    return;
+  }
+
+  box.innerHTML = data.map((r) => {
+    const state = r.approved ? 'PUBLIC' : 'PENDING';
+    const approvalText = r.approved ? 'Hide' : 'Approve';
+    return `
+      <div class="admin-row">
+        <div class="status">${state} · ${new Date(r.created_at).toLocaleString()}</div>
+        <strong>${esc(r.name)}</strong>
+        <div class="muted">${esc(r.role || '')} · ${stars(r.rating)}</div>
+        <p class="muted">${esc(r.review)}</p>
+        <div class="admin-actions">
+          <button class="smallbtn" onclick="toggleApproval('${r.id}', ${!r.approved})">${approvalText}</button>
+          <button class="smallbtn" onclick="editReview(${JSON.stringify(r.id)}, ${JSON.stringify(r.name)}, ${JSON.stringify(r.role || '')}, ${r.rating}, ${JSON.stringify(r.review)})">Edit</button>
+          <button class="smallbtn danger" onclick="deleteReview('${r.id}')">Delete</button>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+window.toggleApproval = async (id, value) => {
+  const { error } = await sb.from('reviews').update({ approved: value }).eq('id', id);
+  if (error) alert(error.message);
+  await admin();
+  await loadReviews();
+};
+
+window.deleteReview = async (id) => {
+  if (!confirm('Delete this review permanently?')) return;
+  const { error } = await sb.from('reviews').delete().eq('id', id);
+  if (error) alert(error.message);
+  await admin();
+  await loadReviews();
+};
+
+window.editReview = async (id, name, role, rating, review) => {
+  const n = prompt('Name', name);
+  if (n === null) return;
+  const rr = prompt('Role', role);
+  if (rr === null) return;
+  const rt = prompt('Review', review);
+  if (rt === null) return;
+  const ra = Number(prompt('Rating 1-5', rating));
+  if (!Number.isInteger(ra) || ra < 1 || ra > 5) {
+    alert('Rating must be 1-5.');
+    return;
+  }
+  const { error } = await sb.from('reviews').update({
+    name: n.trim(),
+    role: rr.trim() || null,
+    rating: ra,
+    review: rt.trim()
+  }).eq('id', id);
+  if (error) alert(error.message);
+  await admin();
+  await loadReviews();
+};
+
+sb.auth.onAuthStateChange(() => setTimeout(admin, 0));
+loadReviews();
+admin();
+</script>
+</body></html>
